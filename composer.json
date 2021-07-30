@@ -1,0 +1,28 @@
+{
+    "name": "colaphp/redis",
+    "description": "",
+    "license": "MIT",
+    "keywords": ["php","colaphp","redis"],
+    "type": "library",
+    "require": {
+        "php": ">=5.6.40",
+        "predis/predis": "~1.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helper.php"
+        ],
+        "psr-4": {
+            "Colaphp\\Redis\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "authors": [
+        {
+            "name": "nydia87",
+            "email": "349196713@qq.com"
+        }
+    ]
+}
