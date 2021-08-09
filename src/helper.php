@@ -1,12 +1,8 @@
 <?php
-
-declare(strict_types=1);
 /**
  * @contact  nydia87 <349196713@qq.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0
  */
-// 助手函数
-
 if (! function_exists('getRedis')) {
 	/**
 	 * 获取Redis实例.
@@ -23,6 +19,7 @@ if (! function_exists('getRedis')) {
 			$RedisDb = new \Colaphp\Redis\RedisDb($servers);
 			$redis[$connection] = new \Colaphp\Redis\RedisStore($RedisDb, $prefix, $connection);
 		}
+
 		return $redis[$connection];
 	}
 }
